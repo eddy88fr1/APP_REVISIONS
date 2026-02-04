@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QCM Lieutenant – Application</title>
+
+  <style>
+    :root{--red:#c62828;--blue:#1565c0;--green:#2e7d32;--bg:#eef2f5;--card:#fff;--muted:#f5f5f5}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#222}
+    header{background:var(--red);color:#fff;text-align:center;padding:18px 12px;font-size:22px;font-weight:700}
+    .container{max-width:920px;margin:auto;padding:14px}
+    .panel{background:var(--card);padding:18px;margin:12px 0;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+    .hidden{display:none}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--blue);color:#fff;border:none;border-radius:10px;padding:12px 16px;font-size:16px;cursor:pointer}
+    .btn.secondary{background:var(--muted);color:#222}
+    .btn.success{background:var(--green)}
+    select{padding:10px;font-size:16px;border-radius:8px}
+    .question{background:#fff;padding:14px;margin:12px 0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+    label.choice{display:block;background:var(--muted);padding:10px;border-radius:8px;margin:6px 0;cursor:pointer}
+    input[type=checkbox]{margin-right:8px;transform:scale(1.15)}
+    .timer,.progress{background:var(--card);padding:10px;border-radius:8px;margin-bottom:10px;font-weight:700;text-align:center}
+    .validateBtn{position:sticky;bottom:0;width:100%;padding:14px;border:none;border-radius:10px;background:var(--green);color:#fff;font-size:18px}
+    .warn{background:#fff3cd;border:1px solid #ffecb5;color:#7a5a00;padding:10px;border-radius:8px;margin:8px 0}
+    .muted{opacity:.75;margin-top:8px}
+  </style>
+</head>
+
+<body>
+<header>QCM Lieutenant – Application</header>
+
+<div class="container">
+
+  <!-- Menu principal -->
+  <div id="modeSelect" class="panel">
+    <h2>Choisir un mode</h2>
+    <div class="row">
+      <button class="btn" onclick="startMode('revision')">Mode Révision</button>
+      <button class="btn" onclick="startMode('examen')">Mode Examen</button>
+      <button class="btn" onclick="startMode('reviewErrors')">Erreurs à revoir</button>
+    </div>
+    <p class="muted">Ajoutez vos questions dans <code>assets/js/ann_*.js</code> ou <code>bank_base_clean.js</code>.</p>
+  </div>
+
+  <!-- Panneau Révision -->
+  <div id="revisionPanel" class="panel hidden">
+    <h2>Mode Révision</h2>
+
+    <div class="row">
+      <label>Nombre de questions :</label>
+      <select id="revCount">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="30">30</option>
+        <option value="60">60</option>
+        <option value="100">100</option>
+        <option value="all">Toutes</option>
+      </select>
+
+      <button class="btn success" onclick="launchRevision()">Lancer</button>
+      <button class="btn secondary" onclick="backHome()">Retour</button>
+    </div>
+
+    <h3>Catégories</h3>
+    <div id="categoryList" class="row"></div>
+    <div id="revWarn" class="warn hidden"></div>
+  </div>
+
+  <!-- Panneau Examen -->
+  <div id="examenPanel" class="panel hidden">
+    <h2>Mode Examen</h2>
+
+    <div class="row">
+      <label>Sujet :</label>
+      <select id="examDataset">
+        <option value="ann_2024_ext">Sujet 2024</option>
+        <option value="ann_2022_ext">Sujet 2022</option>
+        <option value="ann_2020_ext">Sujet 2020</option>
+        <option value="ann_2018_full">Sujet 2018</option>
+      </select>
+
+      <button class="btn success" onclick="launchExamen()">Commencer</button>
+      <button class="btn secondary" onclick="backHome()">Retour</button>
+    </div>
+
+    <p class="muted">Durée : 1h30 – Barème : +1 / +0,5 / −0,25 / −0,25</p>
+    <div id="examWarn" class="warn hidden"></div>
+  </div>
+
+  <!-- Panneau erreurs -->
+  <div id="reviewErrorsPanel" class="panel hidden">
+    <h2>Erreurs à revoir</h2>
+    <div class="row">
+      <button class="btn success" onclick="launchReviewErrors()">Lancer</button>
+      <button class="btn" style="background:#c62828" onclick="clearReviewErrors()">Effacer l'historique</button>
+      <button class="btn secondary" onclick="backHome()">Retour</button>
+    </div>
+    <div id="errWarn" class="warn hidden"></div>
+  </div>
+
+  <div id="timer" class="timer hidden"></div>
+  <div id="progress" class="progress hidden"></div>
+
+  <form id="quiz"></form>
+
+  <div id="result" class="panel hidden"></div>
+
+  <button id="validateBtn" class="validateBtn hidden" onclick="validateQuiz()">Valider mes réponses</button>
+
+</div>
+
+assets/js/ann_2018_full.js</script>
+assets/js/ann_2020_ext.js</script>
+assets/js/ann_2022_ext.js</script>
+assets/js/ann_2024_ext.js</script>
+assets/js/bank_base_clean.js</script>
+assets/js/app.js</script>
+
+</body>
+</html>
