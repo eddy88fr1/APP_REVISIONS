@@ -1,367 +1,122 @@
 
 const ANN_2024_EXT = [
 
-/* 1 */{
-q:"Quel est le premier texte constitutionnel mentionnant la laïcité ?",
-a:["La loi du 11 février 2005","La loi du 9 décembre 1905","Le décret du 23 décembre 2021","La Constitution instaurant la Ve République"],
-c:[3],
-cat:"culture_admin"},
+/* 1 */ { q: "Quel est le premier texte constitutionnel mentionnant la laïcité ?", a: ["La loi du 11 février 2005", "La loi du 9 décembre 1905", "Le décret du 23 décembre 2021", "La Constitution instaurant la Ve République"], c: [3], cat: "culture_admin" },
 
-/* 2 */{
-q:"Les titulaires de pouvoirs de police administrative générale sont :",
-a:["Le Président de la République, le ministre de l'intérieur et les préfets","Le Président de la République, le Premier ministre et les préfets","Le Président de la République, le Premier ministre, le ministre de l'intérieur et les maires","Le Premier ministre, les préfets et les maires"],
-c:[3],
-cat:"culture_admin"},
+/* 2 */ { q: "Les titulaires de pouvoirs de police administrative générale sont :", a: ["Le Président de la République, le ministre de l'intérieur et les préfets", "Le Président de la République, le Premier ministre et les préfets", "Le Président de la République, le Premier ministre, le ministre de l'intérieur et les maires", "Le Premier ministre, les préfets et les maires"], c: [3], cat: "culture_admin" },
 
-/* 3 */{
-q:"En quelle année a été instaurée l'élection au suffrage universel direct pour le Président de la République ?",
-a:["1955","1959","1962","1966"],
-c:[2],
-cat:"culture_admin"},
+/* 3 */ { q: "En quelle année a été instaurée l'élection au suffrage universel direct pour le Président de la République ?", a: ["1955", "1959", "1962", "1966"], c: [2], cat: "culture_admin" },
 
-/* 4 */{
-q:"De quelle(s) année(s) datent les lois Defferre ?",
-a:["1958","1982","1983","1988"],
-c:[1,2],
-cat:"territorial"},
+/* 4 */ { q: "De quelle(s) année(s) date(nt) les 'lois Defferre' ?", a: ["1958", "1982", "1983", "1988"], c: [1, 2], cat: "territorial" },
 
-/* 5 */{
-q:"Combien de sénateurs y a-t-il en France ?",
-a:["384","378","348","328"],
-c:[2],
-cat:"culture_admin"},
+/* 5 */ { q: "Combien de sénateurs y a-t-il en France ?", a: ["384", "378", "348", "328"], c: [2], cat: "culture_admin" },
 
-/* 6 */{
-q:"Que signifie le sigle 3DS ?",
-a:["Décentralisation, Déconcentration, Développement et Simplification",
-"Différenciation, Décentralisation, Décomplexification et Simplification",
-"Différenciation, Décentralisation, Déconcentration et Simplification de l'action publique",
-"Décentralisation, Différenciation, Décomplexification et Simplification de l'action publique"],
-c:[2],
-cat:"territorial"},
+/* 6 */ { q: "Que signifie le sigle '3DS', concernant la loi du 21 février 2022 ?", a: ["Décentralisation, Déconcentration, Développement et Simplification", "Différenciation, Décentralisation, Décomplexification et Simplification", "Différenciation, Décentralisation, Déconcentration et Simplification de l'action publique", "Décentralisation, Différenciation, Décomplexification et Simplification de l'action publique"], c: [2], cat: "territorial" },
 
-/* 7 */{
-q:"Quelles sont les collectivités territoriales mentionnées dans l’article 72 ?",
-a:["Départements d’outre-mer","Collectivités d’outre-mer","Collectivités à statut particulier","Départements"],
-c:[2,3],
-cat:"territorial"},
+/* 7 */ { q: "Quelles sont les collectivités territoriales de la République mentionnées dans l'article 72 de la Constitution ?", a: ["Les départements d'outre-mer", "Les collectivités d'outre-mer", "Les collectivités à statut particulier", "Les départements"], c: [0, 1, 2, 3], cat: "territorial" },
 
-/* 8 */{
-q:"À quelle date débute l’exercice budgétaire ?",
-a:["1er janvier","15 avril","1er décembre","31 décembre"],
-c:[0],
-cat:"finances_publiques"},
+/* 8 */ { q: "A quelle date débute l'exercice budgétaire ?", a: ["Le 1er janvier", "Le 15 avril", "Le 1er décembre", "Le 31 décembre"], c: [0], cat: "finances_publiques" },
 
-/* 9 */{
-q:"En quelle année a été conclu le Traité CECA ?",
-a:["1949","1951","1953","1955"],
-c:[1],
-cat:"europe"},
+/* 9 */ { q: "En quelle année a été conclu le Traité établissant la Communauté européenne du charbon et de l'acier ?", a: ["1949", "1951", "1953", "1955"], c: [1], cat: "europe" },
 
-/* 10 */{
-q:"Quel(s) État(s) n’a/n’ont pas adopté l’euro ?",
-a:["Pays-Bas","Finlande","Danemark","Irlande"],
-c:[2],
-cat:"europe"},
+/* 10 */ { q: "Quel(s) Etat(s) membre(s) de l'Union européenne n'a ou n'ont pas encore adopté l'euro ?", a: ["Pays-Bas", "Finlande", "Danemark", "Irlande"], c: [2], cat: "europe" },
 
-/* 11 */{
-q:"Quelle(s) institution(s) n’est/ne sont pas une institution de l’Union européenne ?",
-a:["Conseil européen","Conseil de l'Union européenne","Conseil de l'Europe","Commission européenne"],
-c:[2],
-cat:"europe"},
+/* 11 */ { q: "Quelle(s) institution(s) n'est ou ne sont pas une ou des institution(s) de l'Union européenne ?", a: ["Conseil européen", "Conseil de l'Union européenne", "Conseil de l'Europe", "Commission européenne"], c: [2], cat: "europe" },
 
-/* 12 */{
-q:"Natura 2000 est :",
-a:["Un programme agricole","Un dispositif COP23","Un dispositif non-contraignant","Un réseau européen de biodiversité"],
-c:[3],
-cat:"environment"},
+/* 12 */ { q: "Natura 2000 est :", a: ["Un programme de mise en œuvre de la politique agricole", "Un dispositif de mise en œuvre de la COP23", "Un dispositif non-contraignant de prise en compte de l'environnement", "Un réseau européen regroupant des sites naturels ou semi-naturels présentant une grande valeur en matière de biodiversité"], c: [3], cat: "environment" },
 
-/* 13 */{
-q:"Quelle est la durée du mandat de la Commission européenne ?",
-a:["5 ans","6 ans","7 ans","4 ans"],
-c:[0],
-cat:"europe"},
+/* 13 */ { q: "Quelle est la durée du mandat de la commission européenne ?", a: ["5 ans", "6 ans", "7 ans", "4 ans"], c: [0], cat: "europe" },
 
-/* 14 */{
-q:"Échelles de mesure des cyclones tropicaux :",
-a:["Beaufort","Fujita","Richter","Saffir-Simpson"],
-c:[3],
-cat:"risques"},
+/* 14 */ { q: "De quelle(s) échelle(s) peut-on se servir pour mesurer l'intensité des cyclones tropicaux ?", a: ["BEAUFORT", "FUJITA", "RICHTER", "SAFFIR-SIMPSON"], c: [3], cat: "risques" },
 
-/* 15 */{
-q:"En risques chimiques, quels seuils existent ?",
-a:["SEI","SOL","SEL","SLI"],
-c:[0,2,3],
-cat:"risques"},
+/* 15 */ { q: "En risques chimiques, il existe un ou plusieurs « seuil(s) », qui peut ou peuvent être :", a: ["SEI (Seuil des Effets Irréversibles)", "SOL (Seuil Olfactif Limité)", "SEL (Seuil des Effets Létaux)", "SLI (Seuil Létal Immédiat)"], c: [0, 2], cat: "risques" },
 
-/* 16 */{
-q:"À quel(s) type(s) de visite(s) peut procéder la commission de sécurité ?",
-a:["Réception","Technique","Périodique","Exceptionnelle"],
-c:[0,2,3],
-cat:"prevention"},
+/* 16 */ { q: "À quel(s) type(s) de visite(s) peut procéder la commission de sécurité ?", a: ["La visite de réception", "La visite technique", "La visite périodique", "La visite exceptionnelle"], c: [0, 2, 3], cat: "prevention" },
 
-/* 17 */{
-q:"Établissements spéciaux inexistants :",
-a:["CTS","REF","SA","SG"],
-c:[1,3],
-cat:"prevention"},
+/* 17 */ { q: "En prévention, concernant les établissements spéciaux, lequel ou lesquels n'existe(nt) pas ?", a: ["CTS", "REF", "SA", "SG"], c: [2, 3], cat: "prevention" },
 
-/* 18 */{
-q:"Outil de gestion opérationnel du préfet :",
-a:["CODIS","Poste de commandement communal","COD","COGIC"],
-c:[2],
-cat:"securite_publique"},
+/* 18 */ { q: "Quel est l'outil de gestion opérationnel à disposition du préfet de département ?", a: ["Le centre opérationnel départemental d'incendie et de secours", "Le poste de commandement communal", "Le centre opérationnel départemental", "Le centre opérationnel de gestion interministérielle des crises"], c: [2], cat: "droit_sc" },
 
-/* 19 */{
-q:"Fonctions pouvant être occupées par un chef de groupe dans un PC colonne :",
-a:["Officier sécurité","Officier anticipation","Officier renseignements","Officier moyens"],
-c:[0,1,3],
-cat:"operatoire"},
+/* 19 */ { q: "Quelle(s) sont la ou les fonction(s) pouvant être occupée(s) par un chef de groupe au sein d'un poste de commandement niveau colonne ?", a: ["Officier sécurité", "Officier anticipation", "Officier renseignements", "Officier moyens"], c: [0, 2, 3], cat: "operatoire" },
 
-/* 20 */{
-q:"Principes permettant aux particules toxiques de se fixer sur les EPI :",
-a:["Absorption","Intoxication","Adsorption","Contamination"],
-c:[0,2],
-cat:"risques"},
+/* 20 */ { q: "Quels sont les principes qui permettent aux particules toxiques et/ou aux résidus de combustion de se fixer sur les EPI ?", a: ["L'absorption", "L'intoxication", "L'adsorption", "La contamination"], c: [0, 2], cat: "risques" },
 
-/* 21 */{
-q:"Par qui est arrêté le règlement opérationnel ?",
-a:["DDIS","Préfet","PCASDIS","Maire"],
-c:[1],
-cat:"orga_sdis"},
+/* 21 */ { q: "Par qui est arrêté le règlement opérationnel ?", a: ["Le DDIS", "Le préfet de département", "Le PCASDIS", "Le maire"], c: [1], cat: "orga_sdis" },
 
-/* 22 */{
-q:"Unité désignant l’activité radioactive ?",
-a:["Curie","Becquerel","Sievert","Gray"],
-c:[1],
-cat:"risques"},
+/* 22 */ { q: "En radioactivité, quelle unité désigne l'activité ?", a: ["Curie", "Becquerel", "Sievert", "Gray"], c: [0, 1], cat: "risques" },
 
-/* 23 */{
-q:"Niveaux de classement ICPE :",
-a:["P","E","R","A"],
-c:[1,3],
-cat:"environment"},
+/* 23 */ { q: "Parmi les propositions, quels sont les niveaux de classement possibles pour une ICPE (Installations Classées Protection de l'Environnement) ?", a: ["P = Préalable", "E = Enregistrement", "R = Restriction", "A = Autorisation"], c: [1, 3], cat: "environment" },
 
-/* 24 */{
-q:"Dangers du risque hydrogène :",
-a:["Asphyxie","Risque thermique","Risque explosif","Risque cryogénique"],
-c:[0,1,2,3],
-cat:"risques"},
+/* 25 */ { q: "Le gaz de pétrole liquéfié, ou GPL, se compose d'un mélange d'hydrocarbures légers stockés à l'état liquide. Quels sont-ils ?", a: ["Propane", "Méthane", "Butane", "Hydrogène"], c: [0, 2], cat: "risques" },
 
-/* 25 */{
-q:"Le GPL est composé de :",
-a:["Propane","Méthane","Butane","Hydrogène"],
-c:[0,2],
-cat:"risques"},
+/* 26 */ { q: "De quoi se compose(nt) les Services d'Incendie et de Secours ?", a: ["Du Bataillon de Marins Pompiers de Marseille (BMPM)", "Des services départementaux, territoriaux et locaux", "De la Brigade de Sapeurs-Pompiers de Paris (BSPP)", "Des Unités d'Instruction et d'Intervention de la Sécurité Civile (UIISC)"], c: [1], cat: "orga_sdis" },
 
-/* 26 */{
-q:"De quoi se composent les Services d’Incendie et de Secours ?",
-a:["BMPM","Services départementaux/territoriaux/locaux","BSPP","UIISC"],
-c:[1],
-cat:"orga_sdis"},
+/* 27 */ { q: "Quelle(s) réponse(s) concernant le Centre Interministériel de Crise est ou sont correcte(s) ?", a: ["Il est placé sous l'autorité du ministère de l'intérieur", "Il est dirigé par le Directeur de la DGSCGC", "C'est l'outil de gestion interministérielle des crises", "Il est activé par le préfet de police de Paris"], c: [0, 2], cat: "droit_sc" },
 
-/* 27 */{
-q:"Centre Interministériel de Crise :",
-a:["Autorité ministère intérieur","Dirigé par DGSCGC","Outil interministériel","Activé par préfet de police"],
-c:[0,2],
-cat:"securite_publique"},
+/* 28 */ { q: "Quelle(s) réponse(s) concernant le SDIS est ou sont correcte(s) ?", a: ["C'est un établissement public national", "C'est un établissement public administratif", "Il dispose d'une autonomie financière", "C'est un établissement industriel et commercial"], c: [1, 2], cat: "orga_sdis" },
 
-/* 28 */{
-q:"À propos du SDIS :",
-a:["Établissement public national","Établissement public administratif","Autonomie financière","Établissement industriel et commercial"],
-c:[1,2],
-cat:"orga_sdis"},
+/* 29 */ { q: "Quelle(s) réponse(s) concernant le Directeur Départemental d'un SDIS est ou sont correcte(s) ?", a: ["C'est un officier supérieur de Sapeurs-Pompiers", "Il est placé sous la double autorité du préfet et du président de son conseil d'administration", "Il est placé sous l'autorité du représentant de l'État dans le département pour la direction des actions de prévention relevant du service d'incendie et de secours", "Il est placé sous l'autorité et la tutelle du représentant de l'État dans le département pour la gestion administrative et financière de l'établissement dont il a la charge"], c: [0, 1, 2], cat: "orga_sdis" },
 
-/* 29 */{
-q:"Concernant le Directeur départemental du SDIS :",
-a:["Officier supérieur SP","Double autorité préfet + président CASDIS","Autorité pour la prévention","Autorité préfet pour gestion financière"],
-c:[0,1,2],
-cat:"orga_sdis"},
+/* 30 */ { q: "Dans les documents structurant un SDIS, quelle(s) réponse(s) concernant le SDACR est ou sont correcte(s) ?", a: ["Il précise les principes de mise en œuvre des règles d'hygiène et de sécurité", "Il est révisé tous les cinq ans", "Le représentant de l'État arrête le SDACR sur avis conforme du conseil d'administration", "Il est élaboré par le SIS sous l'autorité du préfet"], c: [3], cat: "orga_sdis" },
 
-/* 30 */{
-q:"Concernant le SDACR :",
-a:["Hygiène et sécurité","Révisé tous les cinq ans","Arrêté par le préfet après avis conforme CA","Élaboré par le SIS sous autorité préfet"],
-c:[1,2],
-cat:"orga_sdis"},
+/* 31 */ { q: "Quelle(s) réponse(s) concernant les réserves communales de sécurité civile est ou sont correctes ?", a: ["Elles sont placées sous l'autorité du DDSIS", "Elles sont placées sous l'autorité du maire", "La circulaire de 2005 est relative à ces réserves", "Les réservistes sont bénévoles pour un engagement de 6 ans renouvelable"], c: [1, 2], cat: "droit_sc" },
 
-/* 31 */{
-q:"Réserves communales de sécurité civile :",
-a:["Autorité DDSIS","Autorité maire","Circulaire 2005","Engagement de 6 ans renouvelable"],
-c:[1,2,3],
-cat:"securite_publique"},
+/* 32 */ { q: "Qu'est-ce qu'un PCS, aux termes de la loi MOSC ?", a: ["Il s'agit d'un Plan Communal de Sauvegarde", "Il s'agit d'un Plan Communal de Sécurité", "Il s'agit d'un Plan Communal de Sauvetage", "Il s'agit d'un Plan Communal de Secours"], c: [0], cat: "droit_sc" },
 
-/* 32 */{
-q:"Qu’est-ce qu’un PCS ?",
-a:["Plan Communal de Sauvegarde","Plan Communal de Sécurité","Plan Communal de Sauvetage","Plan Communal de Secours"],
-c:[0],
-cat:"securite_publique"},
+/* 33 */ { q: "A quoi correspond la loi n° 96-369 du 3 mai 1996 ?", a: ["Elle précise les missions des SDIS", "C'est la loi de la modernisation de la Sécurité Civile", "Elle instaure une nouvelle organisation territoriale des SDIS: la départementalisation", "Elle crée l'établissement public Service Départemental d'Incendie et de Secours"], c: [0, 2, 3], cat: "orga_sdis" },
 
-/* 33 */{
-q:"Loi du 3 mai 1996 :",
-a:["Précise missions SDIS","Modernisation sécurité civile","Départementalisation SDIS","Crée l'établissement public SDIS"],
-c:[2],
-cat:"orga_sdis"},
+/* 34 */ { q: "Qui nomme les lieutenants de Sapeurs-Pompiers ?", a: ["Par arrêté conjoint du ministre de l'intérieur et du président du conseil d'administration", "Par arrêté conjoint du ministre de l'intérieur et du préfet", "Par arrêté conjoint du préfet et du président du conseil d'administration", "Par arrêté conjoint du DDSIS et du président du conseil d'administration"], c: [2], cat: "fpt" },
 
-/* 34 */{
-q:"Qui nomme les lieutenants de sapeurs-pompiers ?",
-a:["Arrêté ministre + président CA","Arrêté ministre + préfet","Arrêté préfet + président CA","Arrêté DDSIS + président CA"],
-c:[2],
-cat:"fpt"},
+/* 35 */ { q: "Dans un SDIS, que comprend la direction ?", a: ["Le DDSIS", "Le DDSIS adjoint", "Le médecin Chef de la sous-direction santé", "Les chefs de groupement"], c: [0, 1, 2], cat: "orga_sdis" },
 
-/* 35 */{
-q:"Composition de la direction d’un SDIS :",
-a:["DDSIS","DDSIS adjoint","Médecin chef","Chefs de groupement"],
-c:[0,1,3],
-cat:"orga_sdis"},
+/* 36 */ { q: "Quelle(s) réponse(s) concernant les catégories de SIS est ou sont correcte(s) ?", a: ["Ils sont classés par catégorie de 1 à 4", "Ils sont classés par le nombre d'interventions annuel", "Les SPP, SPV, SSSM et PATS sont pris en compte pour le classement", "Ils sont classés par catégorie A, B, C"], c: [3], cat: "orga_sdis" },
 
-/* 36 */{
-q:"Catégories des SIS :",
-a:["Catégories 1 à 4","Classés selon interventions annuelles","SPP/SPV/Santé/PATS comptent","Catégories A/B/C"],
-c:[0,1,2],
-cat:"orga_sdis"},
+/* 37 */ { q: "Parmi les propositions suivantes relatives aux catégories de la FPT, laquelle est exacte ?", a: ["Un Lieutenant de 2ème classe est en catégorie B", "Un Capitaine de SPP est en catégorie B+", "Un Commandant de SPP est en catégorie A", "Un Lieutenant-Colonel de SPP est en catégorie A+"], c: [0, 2, 3], cat: "fpt" },
 
-/* 37 */{
-q:"Catégories hiérarchiques FPT SP :",
-a:["Lieutenant 2e classe → B","Capitaine → B+","Commandant → A","Lieutenant-colonel → A+"],
-c:[2,3],
-cat:"fpt"},
+/* 38 */ { q: "Quelle unité a été militarisée le 29 juillet 1939 ?", a: ["La Brigade des Sapeurs-Pompiers de Paris", "Le Bataillon des Marins-Pompiers de Marseille", "Les UIISC", "Aucune réponse ne convient"], c: [1], cat: "droit_sc" },
 
-/* 38 */{
-q:"Unité militarisée le 29 juillet 1939 :",
-a:["BSPP","BMPM","UIISC","Aucune"],
-c:[0],
-cat:"securite_publique"},
+/* 39 */ { q: "La DGSCGC est placée sous l'autorité :", a: ["D'un Contrôleur général de Sapeurs-Pompiers", "Du préfet de police de Paris", "D'un général de l'armée de terre", "Aucune réponse ne convient"], c: [3], cat: "droit_sc" },
 
-/* 39 */{
-q:"DGSCGC placée sous l’autorité :",
-a:["Contrôleur général SP","Préfet police Paris","Général de l’armée de terre","Aucune"],
-c:[0],
-cat:"securite_publique"},
+/* 40 */ { q: "Combien existe-il de zones de défense et de sécurité en France ?", a: ["8", "10", "12", "15"], c: [2], cat: "droit_sc" },
 
-/* 40 */{
-q:"Nombre de zones de défense et sécurité :",
-a:["8","10","12","15"],
-c:[2],
-cat:"securite_publique"},
+/* 41 */ { q: "Quelle(s) réponse(s) concernant les EMIZ est ou sont correcte(s) ?", a: ["L'EMIZ SUD est à Lyon", "L'EMIZ SUD-OUEST est à Toulouse", "L'EMIZ OUEST est à Brest", "Aucune réponse ne convient"], c: [3], cat: "droit_sc" },
 
-/* 41 */{
-q:"À propos des EMIZ :",
-a:["Sud → Lyon","Sud-Ouest → Toulouse","Ouest → Brest","Aucune"],
-c:[1],
-cat:"securite_publique"},
+/* 42 */ { q: "A quoi correspond la loi n° 2004-811 du 13 août 2004 ?", a: ["C'est la loi de la mise en œuvre de la Sécurité Civile", "C'est la loi relative à la départementalisation des SDIS", "C'est la loi de modernisation de la Sécurité Civile", "Aucune réponse ne convient"], c: [2], cat: "droit_sc" },
 
-/* 42 */{
-q:"Loi du 13 août 2004 :",
-a:["Mise en œuvre sécurité civile","Départementalisation SDIS","Modernisation sécurité civile","Aucune"],
-c:[2],
-cat:"orga_sdis"},
+/* 43 */ { q: "Quelle(s) réponse(s) concernant le dispositif ORSEC est ou sont correcte(s) ?", a: ["Dispositif ORSEC maritime sous la responsabilité du préfet Maritime", "Dispositif ORSEC départemental sous la responsabilité du préfet du Département", "Dispositif ORSEC régional sous la responsabilité du préfet de Région", "Dispositif ORSEC national sous la responsabilité du ministre de l'intérieur"], c: [0, 1, 3], cat: "droit_sc" },
 
-/* 43 */{
-q:"Dispositif ORSEC :",
-a:["ORSEC maritime","ORSEC départemental","ORSEC régional","ORSEC national"],
-c:[0,1],
-cat:"securite_publique"},
+/* 44 */ { q: "Dans le domaine de l'urgence sanitaire, quel(s) type(s) de plan(s) existe(nt) ?", a: ["Le Plan Vert", "Le Plan bleu", "Le Plan blanc", "Le Plan rouge"], c: [1, 2], cat: "droit_sc" },
 
-/* 44 */{
-q:"Plans d’urgence sanitaire :",
-a:["Plan vert","Plan bleu","Plan blanc","Plan rouge"],
-c:[1,2],
-cat:"securite_publique"},
+/* 45 */ { q: "Quelles missions les SIS exercent-ils ?", a: ["La prévention et l'évaluation des risques de sécurité civile", "La préparation des mesures de sauvegarde et l'organisation des secours", "La protection des personnes, des animaux, des biens et de l'environnement", "Aucune réponse ne convient"], c: [0, 1, 2], cat: "orga_sdis" },
 
-/* 45 */{
-q:"Missions des SIS :",
-a:["Prévention et évaluation des risques","Préparation et organisation secours","Protection personnes/biens/env.","Aucune"],
-c:[0,1,2],
-cat:"orga_sdis"},
+/* 46 */ { q: "Quelle(s) réponse(s) concernant l'État-Major de la Sécurité Civile est ou sont correcte(s) ?", a: ["Il veille au bon fonctionnement de la C2IPAV", "Il gère le COGIC", "Il veille au bon fonctionnement de la CIC", "Aucune réponse ne convient"], c: [1], cat: "droit_sc" },
 
-/* 46 */{
-q:"État-major sécurité civile :",
-a:["Supervise C2IPAV","Gère COGIC","Supervise CIC","Aucune"],
-c:[1],
-cat:"securite_publique"},
+/* 47 */ { q: "La conférence nationale des SIS comprend :", a: ["Un sénateur", "Un député", "Deux députés", "Deux sénateurs"], c: [2, 3], cat: "droit_sc" },
 
-/* 47 */{
-q:"Conférence nationale SIS comprend :",
-a:["Un sénateur","Un député","Deux députés","Deux sénateurs"],
-c:[1,3],
-cat:"orga_sdis"},
+/* 48 */ { q: "Quelle(s) réponse(s) concernant le CoTRRIM est ou sont correcte(s) ?", a: ["Établi sur proposition du Président du Conseil régional", "Révisé au plus tard tous les cinq ans", "Établi sous l'autorité des préfets de départements et de zone", "Associe tous les acteurs territoriaux publics et privés"], c: [2, 3], cat: "droit_sc" },
 
-/* 48 */{
-q:"CoTRRiM :",
-a:["Proposition président région","Révisé tous 5 ans","Établi sous autorité préfets","Associe acteurs publics/privés"],
-c:[1,2,3],
-cat:"securite_publique"},
+/* 49 */ { q: "Le DDSIS est sous l'autorité du représentant de l'État pour :", a: ["La direction opérationnelle du SIS et du corps départemental", "La direction des actions de prévention relevant du SIS", "Le contrôle et la coordination des corps communaux", "La mise en œuvre opérationnelle des moyens de secours"], c: [0, 1, 2, 3], cat: "orga_sdis" },
 
-/* 49 */{
-q:"Le DDSIS est sous l'autorité du préfet pour :",
-a:["Direction opérationnelle","Direction prévention","Corps communaux","Mise en œuvre opérationnelle"],
-c:[1],
-cat:"orga_sdis"},
+/* 50 */ { q: "Que signifie l'acronyme SGAMI ?", a: ["Service de Gestion de l'Administration du Ministère de l'Intérieur", "Secrétariat Général pour l'Administration du Ministère de l'Intérieur", "Système de Gestion de l'Alerte du Ministère de l'Intérieur", "Secrétariat de Gestion de l'Administration du Ministère de l'Intérieur"], c: [1], cat: "culture_admin" },
 
-/* 50 */{
-q:"Signification SGAMI :",
-a:["Service gestion administration MI","Secrétariat général administration MI","Système de gestion alerte MI","Secrétariat gestion administration MI"],
-c:[1],
-cat:"culture_admin"},
+/* 51 */ { q: "Concernant l'organisation d'un SIS, quelle réponse est correcte ?", a: ["Le SIS peut comprendre une réserve citoyenne", "Il est organisé en centres, services, groupements et sous-directions", "Les SIS sont placés pour emploi sous l'autorité du Directeur de la DGSCGC", "Aucune réponse ne convient"], c: [0, 1], cat: "orga_sdis" },
 
-/* 51 */{
-q:"Organisation d’un SIS :",
-a:["Peut comprendre réserve citoyenne","Organisé en CIS/services/groupements","Placés pour emploi sous DGSCGC","Aucune"],
-c:[0,1],
-cat:"orga_sdis"},
+/* 52 */ { q: "Concernant les zones de défense et de sécurité, quelle réponse est correcte ?", a: ["Elles élaborent des mesures militaires", "Elles administrent les moyens de la Police nationale", "Elles administrent les moyens de la Gendarmerie nationale", "Elles coordonnent les moyens de sécurité civile dans la zone"], c: [3], cat: "droit_sc" },
 
-/* 52 */{
-q:"Zones de défense et sécurité :",
-a:["Élaborent mesures militaires","Administrent Police nationale","Administrent Gendarmerie","Coordonnent moyens sécurité civile"],
-c:[3],
-cat:"securite_publique"},
+/* 53 */ { q: "Quel(s) code(s) précise(nt) les modalités relatives à l'activité de SPV ?", a: ["Code Général des Collectivités Territoriales", "Code de la sécurité intérieure", "Code de la Fonction publique d’État", "Code de la Fonction publique Hospitalière"], c: [1], cat: "orga_sdis" },
 
-/* 53 */{
-q:"Codes précisant activité SPV :",
-a:["CGCT","Code sécurité intérieure","Code FP État","Code FP hospitalière"],
-c:[0,1],
-cat:"fpt"},
+/* 54 */ { q: "Quelle(s) réponse(s) concernant le conseil d'administration du SIS est ou sont correcte(s) ?", a: ["Comprend entre 15 et 30 membres", "Le DDSIS y participe avec voix délibérante", "Le président de l'UDSP y assiste avec voix consultative", "Le bureau est composé du président, de 3 vice-présidents et parfois un membre supplémentaire"], c: [2, 3], cat: "orga_sdis" },
 
-/* 54 */{
-q:"Conseil d'administration du SIS :",
-a:["15 à 30 membres","DDSIS voix délibérative","Président UDSP voix consultative","Bureau : président + 3 VP + option membre"],
-c:[0,2,3],
-cat:"orga_sdis"},
+/* 55 */ { q: "Par combien de niveaux est matérialisé le plan VIGIPIRATE ?", a: ["2", "3", "4", "5"], c: [1], cat: "securite_publique" },
 
-/* 55 */{
-q:"Niveaux du plan VIGIPIRATE :",
-a:["2","3","4","5"],
-c:[1],
-cat:"securite_publique"},
+/* 56 */ { q: "Que peuvent apporter les services 'COPERNICUS' ?", a: ["Des informations géospatiales pour la gestion des urgences", "La reconnaissance opérationnelle par drones", "Des hôpitaux de campagne projetables", "Aucune réponse ne convient"], c: [0], cat: "europe" },
 
-/* 56 */{
-q:"Services COPERNICUS :",
-a:["Infos géospatiales gestion sinistres","Drones opérationnels","Hôpitaux de campagne","Aucune"],
-c:[0],
-cat:"international"},
+/* 57 */ { q: "Proportion de femmes chez les sapeurs-pompiers civils (2023) :", a: ["Environ 21 %", "Environ 14 %", "Environ 9 %", "Environ 6 %"], c: [0], cat: "orga_sdis" },
 
-/* 57 */{
-q:"Part des femmes SP (2023) :",
-a:["21 %","14 %","9 %","6 %"],
-c:[1],
-cat:"fpt"},
+/* 58 */ { q: "Le préfet maritime de la Méditerranée exerce depuis :", a: ["Marseille", "Toulon", "Nice", "Menton"], c: [1], cat: "droit_sc" },
 
-/* 58 */{
-q:"Préfecture maritime Méditerranée :",
-a:["Marseille","Toulon","Nice","Menton"],
-c:[1],
-cat:"securite_publique"},
+/* 59 */ { q: "Quelle(s) réponse(s) concernant les missions de la Sécurité Civile est ou sont correcte(s) ?", a: ["Prévention des risques de toute nature", "Protection des personnes, animaux, biens et environnement", "Information et alerte des populations", "Protection générale en lien avec la sécurité publique"], c: [0, 1, 2, 3], cat: "droit_sc" },
 
-/* 59 */{
-q:"Missions de la sécurité civile :",
-a:["Prévention risques","Protection personnes/biens/env.","Information/alerte populations","Lien sécurité publique"],
-c:[0,1,2,3],
-cat:"securite_publique"},
-
-/* 60 */{
-q:"Activation MPCU en 2022 :",
-a:["< 10 fois","20–40 fois","50–120 fois","> 150 fois"],
-c:[2],
-cat:"international"},
+/* 60 */ { q: "Activation du MPCU en 2022 :", a: ["Moins de 10 fois", "Entre 20 et 40 fois", "Entre 50 et 120 fois", "Plus de 150 fois"], c: [3], cat: "europe" }
 
 ];
