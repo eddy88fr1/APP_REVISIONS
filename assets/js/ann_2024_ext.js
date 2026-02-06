@@ -94,13 +94,13 @@ const ANN_2024_EXT = [
   {
     q: "À quel(s) type(s) de visite(s) peut procéder la commission de sécurité ?",
     a: ["La visite de réception", "La visite technique", "La visite périodique", "La visite exceptionnelle"],
-    c: [0, 2, 3], // A, C et D sont en vert [cite: 110, 111, 113, 114]
+    c: [0, 2], // A, C et D sont en vert [cite: 110, 111, 113, 114]
     cat: "prevention"
   },
   {
     q: "En prévention, concernant les établissements spéciaux, lequel ou lesquels n'existe (nt) pas ?",
     a: ["CTS", "REF", "SA", "SG"],
-    c: [2, 3], // C et D sont en vert [cite: 115, 118, 119]
+    c: [2], // C et D sont en vert [cite: 115, 118, 119]
     cat: "prevention"
   },
   {
@@ -130,7 +130,7 @@ const ANN_2024_EXT = [
   {
     q: "En radioactivité, quelle unité désigne l'activité ?",
     a: ["Curie", "Becquerel", "Sievert", "Gray"],
-    c: [0, 1], // A et B sont en vert [cite: 141, 142, 143]
+    c: [1], // A et B sont en vert [cite: 141, 142, 143]
     cat: "risques"
   },
   {
@@ -154,7 +154,7 @@ const ANN_2024_EXT = [
   {
     q: "De quoi se compose(nt) les Services d'Incendie et de Secours ?",
     a: ["Du Bataillon de Marins Pompiers de Marseille (BMPM)", "Des services départementaux, territoriaux et locaux", "De la Brigade de Sapeurs-Pompiers de Paris (BSPP)", "Des Unités d'Instruction et d'Intervention de la Sécurité Civile (UIISC)"],
-    c: [1], // B est en vert [cite: 160, 162]
+    c: [0,1,2], // B est en vert [cite: 160, 162]
     cat: "orga_sdis"
   },
   {
@@ -178,7 +178,7 @@ const ANN_2024_EXT = [
   {
     q: "Dans les documents structurant un SDIS, quelle(s) réponse(s) concernant le SDACR est ou sont correcte(s) ?",
     a: ["Il précise les principes de mise en œuvre des règles d'hygiène et de sécurité", "Il est révisé tous les cinq ans", "Après avis du conseil départemental, le représentant de l'État... arrête le SDACR sur avis conforme du CA", "Il est élaboré par le SIS sous l'autorité du préfet"],
-    c: [3], // D est en vert [cite: 179, 183]
+    c: [1,2,3], // D est en vert [cite: 179, 183]
     cat: "orga_sdis"
   },
   {
@@ -208,7 +208,7 @@ const ANN_2024_EXT = [
   {
     q: "Dans un SDIS, que comprend la direction ?",
     a: ["Le DDSIS", "Le DDSIS adjoint", "Le médecin Chef de la sous-direction santé", "Les chefs de groupement"],
-    c: [0, 1, 2], // A, B et C sont en vert [cite: 204, 205, 206, 207]
+    c: [0, 1, 2,3], // A, B et C sont en vert [cite: 204, 205, 206, 207]
     cat: "orga_sdis"
   },
   {
@@ -220,7 +220,7 @@ const ANN_2024_EXT = [
   {
     q: "Propositions relatives aux catégories de la fonction publique territoriale :",
     a: ["Lieutenant 2ème classe est en catégorie B", "Capitaine SPP est en catégorie B+", "Commandant SPP est en catégorie A", "Lieutenant-Colonel SPP est en catégorie A+"],
-    c: [0, 2, 3], // A, C et D sont en vert [cite: 215, 216, 218, 219]
+    c: [0, 2], // A, C et D sont en vert [cite: 215, 216, 218, 219]
     cat: "fpt"
   },
   {
@@ -256,7 +256,7 @@ const ANN_2024_EXT = [
   {
     q: "Quelle(s) réponse(s) concernant le dispositif ORSEC est ou sont correcte(s) ?",
     a: ["ORSEC maritime (Préfet Maritime)", "ORSEC départemental (Préfet Dept)", "ORSEC régional (Préfet Région)", "ORSEC national (Ministre Intérieur)"],
-    c: [0, 1, 3], // A, B et D sont en vert [cite: 246, 247, 248, 250]
+    c: [0, 1], // A, B et D sont en vert [cite: 246, 247, 248, 250]
     cat: "droit_sc"
   },
   {
@@ -274,19 +274,19 @@ const ANN_2024_EXT = [
   {
     q: "Réponse(s) concernant l'État-Major de la Sécurité Civile :",
     a: ["Veille au bon fonctionnement de la C2IPAV", "Il gère le COGIC", "Veille au bon fonctionnement de la CIC", "Aucune réponse ne convient"],
-    c: [1], // B est en vert [cite: 262, 264]
+    c: [0,1,2], // B est en vert [cite: 262, 264]
     cat: "droit_sc"
   },
   {
     q: "La conférence nationale des services d'incendie et de secours comprend :",
     a: ["Un sénateur", "Un député", "Deux députés", "Deux sénateurs"],
-    c: [2, 3], // C et D sont en vert [cite: 267, 270, 271]
+    c: [0,1], // C et D sont en vert [cite: 267, 270, 271]
     cat: "droit_sc"
   },
   {
     q: "Réponse(s) concernant le CoTRRIM :",
     a: ["Proposition du Président du Conseil régional", "Révisé tous les cinq ans", "Autorité préfets de dept et de zone", "Associe tous les acteurs territoriaux publics et privés"],
-    c: [2, 3], // C et D sont en vert [cite: 272, 275, 276]
+    c: [1,2,3], // C et D sont en vert [cite: 272, 275, 276]
     cat: "droit_sc"
   },
   {
@@ -310,13 +310,13 @@ const ANN_2024_EXT = [
   {
     q: "Concernant les zones de défense et de sécurité :",
     a: ["Mesures militaires", "Admin Police nationale", "Admin Gendarmerie nationale", "Coordonnent les moyens de sécurité civile dans la zone"],
-    c: [3], // D est en vert [cite: 286]
+    c: [1,2,3], // D est en vert [cite: 286]
     cat: "droit_sc"
   },
   {
     q: "Quel(s) code(s) précise(nt) les modalités de l'activité de SPV ?",
-    a: ["CGCT", "Code de la sécurité intérieure", "Code de la Fonction publique d’État", "Code de la Fonction publique Hospitalière"],
-    c: [1], // B est en vert [cite: 287]
+    a: ["Code General Collectivites Territoriales", "Code de la sécurité intérieure", "Code de la Fonction publique d’État", "Code de la Fonction publique Hospitalière"],
+    c: [0,1], // B est en vert [cite: 287]
     cat: "orga_sdis"
   },
   {
