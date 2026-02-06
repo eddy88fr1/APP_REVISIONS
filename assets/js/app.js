@@ -196,6 +196,56 @@ function validateQuiz(){
       if(!MISSED_QUESTIONS.some(x=>x.q===q.q)){
         MISSED_QUESTIONS.push(q);
         saveMissedQuestions();
+        // --- COLORATION DES QUESTIONS ET BONNES RÉPONSES ---
+QUIZ.forEach((q, i) => {
+    const questionDiv = document.querySelectorAll(".question")[i];
+    const checkboxes = [...document.querySelectorAll(`input[name=q${i}]`)];
+
+    const userChoices = checkboxes
+        .filter(cb => cb.checked)
+        .map(cb => parseInt(cb.value));
+
+    const isCorrect = 
+        userChoices.length === q.c.length &&
+        userChoices.every(v => q.c.includes(v));
+
+    // Coloration du bloc question
+    if (isCorrect) {
+        questionDiv.style.border = "2px solid #2ecc71";   // vert
+        questionDiv.style.background = "#eafaf1";
+    } else {
+        questionDiv.style.border = "2px solid #e74c3c";   // rouge
+        questionDiv.style.background = "#fdecea";
+    }
+
+    // Coloration des choix individuels
+    checkboxes.forEach(cb => {
+        const label = cb.parentElement;
+
+        const val = parseInt(cb.value);
+        const isGoodAnswer = q.c.includes(val);
+
+        if (cb.checked && isGoodAnswer) {
+            // Bonne réponse cochée → vert foncé
+            label.style.background = "#2ecc71";
+            label.style.color = "white";
+        }
+        else if (cb.checked && !isGoodAnswer) {
+            // Mauvaise réponse cochée → rouge
+            label.style.background = "#e74c3c";
+            label.style.color = "white";
+        }
+        else if (!cb.checked && isGoodAnswer) {
+            // Bonne réponse NON cochée → vert clair
+            label.style.background = "#a3e4d7";
+            label.style.color = "black";
+        } 
+        else {
+            // Réponse neutre non concernée
+            label.style.opacity = 0.7;
+        }
+    });
+});
       }
       return;
     }
@@ -233,3 +283,4 @@ function validateQuiz(){
 
 // Utils
 function shuffle(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1]);}
+
