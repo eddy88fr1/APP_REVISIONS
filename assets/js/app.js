@@ -149,6 +149,7 @@ function clearReviewErrors(){
 }
 
 // Affichage des questions
+
 function startQuizDisplay(){
   ["modeSelect","revisionPanel","examenPanel","reviewErrorsPanel","result"].forEach(hide);
   setText("quiz","");
@@ -160,11 +161,15 @@ function startQuizDisplay(){
   QUIZ.forEach((q,i)=>{
     const div=document.createElement("div");
     div.className="question";
-    let html=`<b>Question ${i+1}</b><br>${q.q}`;
+
+    // ❗ Version NON échappée
+    let html = `<b>Question ${i+1}</b><br>${q.q}`;
+
     q.a.forEach((ans,j)=>{
-      html+=`<label class='choice'><input type='checkbox' name='q${i}' value='${j}'> ${ans}</label>`;
+      html += `<label class='choice'><input type='checkbox' name='q${i}' value='${j}'> ${ans}</label>`;
     });
-    div.innerHTML=html;
+
+    div.innerHTML = html;
     quiz.appendChild(div);
   });
 }
@@ -283,5 +288,6 @@ QUIZ.forEach((q, i) => {
 
 // Utils
 function shuffle(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1]);}
+
 
 
