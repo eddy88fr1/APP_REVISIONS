@@ -196,7 +196,26 @@ function validateQuiz(){
       if(!MISSED_QUESTIONS.some(x=>x.q===q.q)){
         MISSED_QUESTIONS.push(q);
         saveMissedQuestions();
-        // --- COLORATION DES QUESTIONS ET BONNES RÉPONSES ---
+
+      }
+      return;
+    }
+
+    const wrong=checked.some(v=>!q.c.includes(v));
+    if(wrong){
+      if(MODE==="examen") score-=.25;
+      if(!MISSED_QUESTIONS.some(x=>x.q===q.q)){
+        MISSED_QUESTIONS.push(q);
+        saveMissedQuestions();
+      }
+    } else {
+      if(checked.length===q.c.length) score+=1;
+      else score += (MODE==="examen") ? 0.5 : 1;
+    }
+  });
+
+  const note=(QUIZ.length>0)?(score/QUIZ.length*20):0;
+// --- COLORATION DES QUESTIONS ET BONNES RÉPONSES ---
 QUIZ.forEach((q, i) => {
     const questionDiv = document.querySelectorAll(".question")[i];
     const checkboxes = [...document.querySelectorAll(`input[name=q${i}]`)];
@@ -246,25 +265,6 @@ QUIZ.forEach((q, i) => {
         }
     });
 });
-      }
-      return;
-    }
-
-    const wrong=checked.some(v=>!q.c.includes(v));
-    if(wrong){
-      if(MODE==="examen") score-=.25;
-      if(!MISSED_QUESTIONS.some(x=>x.q===q.q)){
-        MISSED_QUESTIONS.push(q);
-        saveMissedQuestions();
-      }
-    } else {
-      if(checked.length===q.c.length) score+=1;
-      else score += (MODE==="examen") ? 0.5 : 1;
-    }
-  });
-
-  const note=(QUIZ.length>0)?(score/QUIZ.length*20):0;
-
   const html = `
     <h3>Résultat</h3>
     <p><b>Score :</b> ${score.toFixed(2)} / ${QUIZ.length}</p>
@@ -283,4 +283,5 @@ QUIZ.forEach((q, i) => {
 
 // Utils
 function shuffle(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1]);}
+
 
