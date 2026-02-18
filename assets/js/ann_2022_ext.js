@@ -1,124 +1,123 @@
 const ANN_2022_EXT = [
   
-/* 1 */{ q:"Parmi les territoires suivants, lesquels sont des collectivités d’outre mer (COM) ?", a:["Martinique","Polynésie française","Saint Pierre et Miquelon","Mayotte"], c:[1,2], cat:"culture_admin" },
-
-/* 2 */{ q:"Lesquelles de ces structures sont des services déconcentrés de l’État ?", a:["ARS","DREAL","DRAAF","DIRA"], c:[0,1,2,3], cat:"culture_admin" },
-
-/* 3 */{ q:"Quelles affirmations concernant le Sénat sont exactes ?", a:["Mandat de 6 ans","Siège au Palais du Luxembourg","Composé de 577 membres","Chambre du Parlement"], c:[0,1,3], cat:"culture_admin" },
-
-/* 4 */{ q:"Selon la loi NOTRe, quelles compétences relèvent du département ?", a:["Développement économique","Action sociale","Voirie départementale","Clause générale"], c:[1,2], cat:"culture_admin" },
-
-/* 5 */{ q:"Critères d’une voie engins :", a:["Largeur ≥ 8 m","Rayon ≥ 10 m","Hauteur ≥ 3,5 m","Pente ≤ 10 %"], c:[2,3], cat:"prevention" },
-
-/* 6 */{ q:"Les anciennes unités de sauvetage déblaiement sont désormais appelées :", a:["Unités internationales","Unités européennes","Unités de Sauvetage Appui Recherche (USAR)","Unités de renfort"], c:[2], cat:"risques" },
-
-/* 7 */{ q:"La classification européenne feu inclut notamment :", a:["R","C","E","I"], c:[0,2,3], cat:"prevention" },
-
-/* 8 */{ q:"Quelles catégories d’IGH n’existent pas ?", a:["GHU","GHN","GHTC","GHZ"], c:[0,3], cat:"prevention" },
-
-/* 9 */{ q:"Le préfet maritime Manche–Mer du Nord exerce depuis :", a:["Cherbourg","Le Havre","Calais","Boulogne"], c:[0], cat:"culture_admin" },
-
-/* 10 */{ q:"Quel périmètre minimal établir autour d’une éolienne en feu ? (H = hauteur)", a:["H","1,2 × H","1,5 × H","2 × H"], c:[3], cat:"risques" },
-
-/* 11 */{ q:"Documents indispensables à un entretien professionnel :", a:["Fiche d’entretien","Arrêté de nomination","Fiche de poste","—"], c:[0,2], cat:"fpt" },
-
-/* 12 */{ q:"Quels types de sectorisation existe t il dans le GDO ?", a:["Géographique","Réflexe","Réfléchie","Fonctionnelle"], c:[0,1,2,3], cat:"operatoire" },
-
-/* 13 */{ q:"Un CSP doit assurer simultanément :", a:["1 INC + 2 SAP","1 INC + 1 SAP + 1 autre","1 INC + 2 SAP + 1 autre","1 INC + 2 SAP + 2 autres"], c:[1], cat:"orga_sdis" },
-
-/* 14 */{ q:"La charte du SPV :", a:["Droits et devoirs","Fixe indemnités","Signée à l’engagement","Codifiée CSI"], c:[0,2], cat:"orga_sdis" },
-
-/* 15 */{ q:"Le CNFPT est :", a:["Instance paritaire","Établissement public","Assure formation","Organise concours"], c:[1,2,3], cat:"culture_admin" },
-
-/* 16 */{ q:"Réseau ANTARES :", a:["Numérique","Analogique","Mode relayé","Communication directe portatifs"], c:[0,2,3], cat:"transmissions" },
-
-/* 17 */{ q:"À qui s’applique l’OBNSIC ?", a:["Moyens nationaux","SDIS","BSPP","BMPM"], c:[0,1,2,3], cat:"transmissions" },
-
-/* 18 */{ q:"Volume d’émulseur nécessaire (1000 m², 20 min, 5 L/min/m², 5 %) :", a:["10 m³","5 m³","2,5 m³","8 m³"], c:[1], cat:"risques" },
-
-/* 19 */{ q:"Agents chimiques neurotoxiques :", a:["Chlore","Sarin","Tabun","Ypérite"], c:[1,2], cat:"risques" },
-
-/* 20 */{ q:"La CATSIS :", a:["Présidée par DDSIS","Présidée par PCASDIS","Non obligatoirement paritaire","Consultée sur avancements"], c:[1,2,3], cat:"orga_sdis" },
-
-/* 21 */{ q:"Le DICRIM sert à :", a:["Informer sur les risques","Indiquer les mesures de sauvegarde","Être arrêté par préfet","MAJ annuelle obligatoire"], c:[0,1], cat:"risques" },
-
-/* 22 */{ q:"Le dispositif ORSEC comprend :", a:["Niveaux dépt./zonal/national","Dispositions générales","Dispositions spécifiques","Révision 1 an"], c:[0,1,2], cat:"risques" },
-
-/* 23 */{ q:"Recettes SDIS :", a:["FCTVA","Contributions communes/EPCI","Remboursements interventions","Taxes santé"], c:[0,1,2], cat:"finances_publiques" },
-
-/* 24 */{ q:"AP4C :", a:["Flamme H2","Détecte toxiques guerre","Mesure O2","Mesure CO"], c:[0,1], cat:"risques" },
-
-/* 25 */{ q:"Indicatif radio chef de groupement :", a:["Lancelot","Gareth","Hippocrate","Merlin"], c:[0], cat:"transmissions" },
-
-/* 26 */{ q:"ESCRIM signifie :", a:["Module international","NRBC","Élément modulable de sécurité civile","Module hospitalier"], c:[2], cat:"risques" },
-
-/* 27 */{ q:"Pacte capacitaire :", a:["CoTRRiM","DDRM","SDACR","RO"], c:[0,1,2], cat:"orga_sdis" },
-
-/* 28 */{ q:"Deux isotopes partagent :", a:["Même neutrons","Même protons","Même masse","Même propriétés électriques"], c:[1], cat:"risques" },
-
-/* 29 */{ q:"Part de femmes SPP hors SSSM (2020) :", a:["2 %","4 %","8 %","12 %"], c:[2], cat:"orga_sdis" },
-
-/* 30 */{ q:"PAPI signifie :", a:["Programme d’action et prévention inondations","Plan d’analyse interventions","Alerte préfectorale immédiate","Plan industriel"], c:[0], cat:"risques" },
-
-/* 31 */{ q:"Le CST :", a:["Obligatoire >50 agents","Mis en place en 2025","Créé par loi de transformation FP","Fusion CT/CAP partielle"], c:[0,2,3], cat:"fpt" },
-
-/* 32 */{ q:"Rémunération SPP :", a:["Indice brut + majoré","Indemnité feu 19 %","Responsabilité selon grade/emploi","Cotisations syndicales affichées"], c:[0,1,2], cat:"fpt" },
-
-/* 33 */{ q:"Principes budgétaires :", a:["Universalité","Obligation","Unité","Concentration"], c:[0,2], cat:"finances_publiques" },
-
-/* 34 */{ q:"INSARAG dépend de :", a:["ONU","UE","MAE France","Conseil Europe"], c:[0], cat:"international" },
-
-/* 35 */{ q:"Sanctions hors 3e groupe :", a:["Rétrogradation","Exclusion 16j–2 ans","Retraite d’office","Abaissement échelon"], c:[0,3], cat:"fpt" },
-
-/* 36 */{ q:"Pour être exécutoire, une loi doit être :", a:["Promulguée par Parlement","Promulguée par Président","Promulguée par PM","Promulguée par CC"], c:[1], cat:"culture_admin" },
-
-/* 37 */{ q:"Le département est :", a:["Établissement public","Personne morale privée","Collectivité territoriale","Circonscription État"], c:[2,3], cat:"culture_admin" },
-
-/* 38 */{ q:"La Protection Civile est :", a:["Terme européen","Service DGSCGC","Association agréée","—"], c:[2], cat:"risques" },
-
-/* 39 */{ q:"Ordre de préséance :", a:["Sénateur–Député–Préfet","Préfet–Député–Sénateur","Député–Sénateur–Préfet","—"], c:[1], cat:"culture_admin" },
-
-/* 40 */{ q:"ERCC dépend de :", a:["Parlement UE","Conseil UE","Commission européenne","CE"], c:[2], cat:"europe" },
-
-/* 41 */{ q:"La Suisse fait partie :", a:["Zone euro","Espace Schengen","UE","ONU"], c:[1,3], cat:"europe" },
-
-/* 42 */{ q:"Principe d’universalité :", a:["Doc unique","Affectation obligatoire","Toutes recettes financent toutes dépenses","Prolongation autorisation"], c:[2], cat:"finances_publiques" },
-
-/* 43 */{ q:"Révision Constitution :", a:["Référendum","Ordonnance","Assemblée seule","Congrès"], c:[0,3], cat:"culture_admin" },
-
-/* 44 */{ q:"Président du Conseil Constitutionnel au 1/1/2022 :", a:["Juppé","Fabius","Toubon","Morano"], c:[1], cat:"culture_admin" },
-
-/* 45 */{ q:"Charte environnement 2004 :", a:["Intégrée Constitution","Urbanisme local","EIC","Supprime précaution"], c:[0], cat:"culture_admin" },
-
-/* 46 */{ q:"Destitution du Président :", a:["Sénat","Assemblée","Haute Cour","Commission mixte"], c:[2], cat:"culture_admin" },
-
-/* 47 */{ q:"CJUE siège à :", a:["Strasbourg","Bruxelles","Luxembourg","Francfort"], c:[2], cat:"europe" },
-
-/* 48 */{ q:"Loi 6 août 2019 a :", a:["Supprimé 1607h","Créé rupture conventionnelle","LDG","Modifié CAP"], c:[1,2,3], cat:"fpt" },
-
-/* 49 */{ q:"Réseaux radios corrects :", a:["ACROPOL–Police","RUBIS–Police","ANTARES–Sécurité civile","CORAIL NG–Gendarmerie mobile"], c:[0,2,3], cat:"transmissions" },
-
-/* 50 */{ q:"ERP – Principes de prévention :", a:["Évacuation","Intervention secours","Maintien activité","Limiter propagation"], c:[0,1,3], cat:"prevention" },
-
-/* 51 */{ q:"SPV en 2020 :", a:["123k","152k","197k","251k"], c:[2], cat:"orga_sdis" },
-
-/* 52 */{ q:"Chefs de groupement :", a:["Doivent être SPP","ESD","Doivent être GOC5","Arrêté conjoint"], c:[1], cat:"orga_sdis" },
-
-/* 53 */{ q:"ANSC :", a:["Association","Agence secours","Agence du numérique sécurité civile","Agence chimique"], c:[2], cat:"risques" },
-
-/* 54 */{ q:"Lieutenant HC :", a:["Au choix","Concours interne","Examen pro","Tableau avancement"], c:[0,3], cat:"fpt" },
-
-/* 55 */{ q:"Positions administratives :", a:["Congé maladie","Disponibilité","Cessation activité","Congé parental"], c:[0,1,3], cat:"fpt" },
-
-/* 56 */{ q:"Taux encadrement SDIS :", a:["1/15","1/20","1/25","1/30"], c:[3], cat:"orga_sdis" },
-
-/* 57 */{ q:"Exclusion temporaire 3 jours :", a:["1er groupe","2e groupe","Effacée après 3 ans","Arrêté conjoint"], c:[1,2], cat:"fpt" },
-
-/* 58 */{ q:"Durée moyenne engagement SPV 2020 :", a:["2 ans 8 mois","4 ans 1 mois","7 ans 3 mois","11 ans 9 mois"], c:[2], cat:"orga_sdis" },
-
-/* 59 */{ q:"Infirmiers SPP classe normale :", a:["Indemnité feu","Catégorie A","Peuvent gérer pharmacie","Galons bleus"], c:[0,1,3], cat:"fpt" },
-
-/* 60 */{ q:"Nomination sergent vers lieutenant 1re classe :", a:["Formation adaptation","Retour stagiaire","Mobilité obligatoire","Absence sanction exigée"], c:[0,1], cat:"orga_sdis" }
-
-
+/* 1 */
+{ q:"Qui est à l'origine du principe de séparation des pouvoirs ?", a:["Napoléon Bonaparte","Richelieu","Michel Debré","Montesquieu"], c:[3], cat:"droit_public" },
+/* 2 */
+{ q:"Parmi ces propositions concernant l'Assemblée Nationale, laquelle/lesquelles est/sont exactes ?", a:["Les députés sont élus pour 6 ans","Les députés siègent au Palais du Luxembourg","Elle se compose de 577 députés","L'Assemblée Nationale a été créée en 1789"], c:[2,3], cat:"droit_public" },
+/* 3 */
+{ q:"Qui peut nommer certains membres du Conseil constitutionnel ?", a:["Le Président de la République","Les grands électeurs","Le Président de l'Assemblée Nationale","Les parlementaires réunis en Congrès"], c:[0,2], cat:"droit_public" },
+/* 4 */
+{ q:"La jurisprudence :", a:["est une source du droit","représente l'ensemble des arrêts et des jugements rendus par les Cours et les Tribunaux pour la solution d'une situation juridique donnée","est codifiée dans le CGCT","n'est pas applicable en droit public"], c:[0,1], cat:"droit_public" },
+/* 5 */
+{ q:"Parmi les textes suivants, quel est celui / quels sont ceux qui compose(nt) le bloc de constitutionnalité ?", a:["Le préambule de la Constitution de 1946","La Constitution du 04 octobre 1958","La Charte de l'Environnement de 2004","La Déclaration des Droits de l'Homme et du Citoyen de 1789"], c:[0,1,2,3], cat:"droit_public" },
+/* 6 */
+{ q:"La notion d'ordre public définie par le CGCT, comprend :", a:["le bon ordre","la tranquillité","la sécurité","la salubrité"], c:[0,1,2,3], cat:"droit_public" },
+/* 7 */
+{ q:"Quelle(s) proposition(s) correspond(ent) à la bonne hiérarchie des normes dans l'ordre croissant?", a:["Arrêtés préfectoraux - Arrêtés ministériels - Lois - Décrets","Arrêtés - Décrets - Lois - Constitution","Lois - Décrets - Constitution","Constitution - Lois - Décrets - Arrêtés"], c:[1], cat:"droit_public" },
+/* 8 */
+{ q:"En France, la séparation des pouvoirs est inscrite dans :", a:["le Code Civil","les lois organiques","la Constitution","les circulaires"], c:[2], cat:"droit_public" },
+/* 9 */
+{ q:"Le CNFPT est :", a:["un service de l'État","un établissement public à caractère administratif","une structure associative","une autorité administrative indépendante"], c:[1], cat:"droit_public" },
+/* 10 */
+{ q:"Le principe de libre administration des collectivités territoriales :", a:["est consacré dans la constitution","est soumis au contrôle du juge administratif","implique que les collectivités territoriales disposent d'un pouvoir réglementaire","implique que les collectivités territoriales disposent d'un pouvoir législatif"], c:[0,1,2], cat:"droit_public" },
+/* 11 */
+{ q:"Dans quel(s)code(s) peut-on trouver des dispositions législatives ou réglementaires concernant les sapeurs-pompiers?", a:["Le code général des collectivités territoriales","Le code de la sécurité intérieure","Le code de la santé publique","Le code des services d'incendie et de secours"], c:[0,1,2], cat:"securite_civile" },
+/* 12 */
+{ q:"Parmi ces propositions, laquelle/lesquelles constitue(nt) des autorités déconcentrées ?", a:["Le maire","Le Préfet","Le président du conseil départemental","Le directeur départemental des finances publiques"], c:[0,1,3], cat:"droit_public" },
+/* 13 */
+{ q:"Tout fonctionnaire qui, dans l'exercice de ses fonctions, a la connaissance d'un crime ou d'un délit est tenu d'en donner avis sans délai au procureur de la République en vertu de :", a:["l'article 1424 du CGCT","l'article 52 du CSI","l'article 40 du code de procédure pénale","l'article 35 du code général de la fonction publique"], c:[2], cat:"droit_public" },
+/* 14 */
+{ q:"Qui est l'adjoint direct du Préfet de département ?", a:["Le sous-préfet chargé de la politique de la ville","Le directeur de cabinet du Préfet","Le secrétaire général de la préfecture","Le directeur départemental"], c:[2], cat:"droit_public" },
+/* 15 */
+{ q:"Les emplois de direction comprennent :", a:["le directeur départemental adjoint des services d'incendie et de secours","les chefs de service","les chefs de centre","les chefs de groupement"], c:[0,3], cat:"securite_civile" },
+/* 16 */
+{ q:"Le conseil d'administration d'un SDIS se compose :", a:["de 15 à 30 membres","de moins de 15 membres","d'au moins trois cinquièmes de représentants du conseil départemental","d'au moins un fifth de représentants des communes et EPCI"], c:[0,2,3], cat:"securite_civile" },
+/* 17 */
+{ q:"Quelle proposition est conforme à l'ordre protocolaire des médailles, de la plus élevée à la moins élevée ?", a:["Légion d'honneur, Ordre national du Mérite, médaille militaire, médaille de la sécurité intérieure, médaille pour acte de courage et dévouement","Légion d'honneur, médaille militaire, Ordre national du Mérite, médaille de la sécurité intérieure, médaille pour acte de courage et de dévouement","Légion d'honneur, Ordre national du Mérite, médaille militaire, médaille pour acte de courage et dévouement, médaille de la sécurité intérieure","Légion d'honneur, médaille militaire, Ordre national du Mérite, médaille pour acte de courage et de dévouement, médaille de la sécurité intérieure"], c:[1], cat:"culture_admin" },
+/* 18 */
+{ q:"En quelle année la départementalisation des SDIS a-t-elle été rendue effectivement obligatoire ?", a:["1987","2011","2004","1996"], c:[3], cat:"securite_civile" },
+/* 19 */
+{ q:"Par combien de cadres d'emplois les sapeurs-pompiers professionnels sont-ils régis ?", a:["4 cadres d'emplois","6 cadres d'emplois","8 cadres d'emplois","10 cadres d'emplois"], c:[2], cat:"securite_civile" },
+/* 20 */
+{ q:"Quel(s) document(s) budgétaire(s) autorise(nt) les dépenses non prévues lors des délibérations précédentes ?", a:["le Budget Primitif (BP)","les Restes A Réaliser (RAR)","les Décisions Modificatives (DM)","le Budget Supplémentaire (BS)"], c:[2,3], cat:"finances_publiques" },
+/* 21 */
+{ q:"Parmi ces propositions, laquelle est / lesquelles sont un/des principe(s) budgétaire(s) ?", a:["L'annualité","La gratuité","La transversalité","La sincérité"], c:[0,3], cat:"finances_publiques" },
+/* 22 */
+{ q:"Pour un établissement public tel qu'un SDIS, qui est l'ordonnateur ?", a:["Le Préfet","Le Président de Région","Le Président du Conseil d'Administration du SDIS","Le DDSIS"], c:[2], cat:"finances_publiques" },
+/* 23 */
+{ q:"Le débat d'orientation budgétaire pour un SDIS :", a:["est obligatoire","doit faire l'objet d'un rapport d'orientation budgétaire","doit faire l'objet d'une délibération distincte","doit être tenu par l'organe délibérant dans les deux mois précédant l'examen du budget"], c:[0,1,2,3], cat:"finances_publiques" },
+/* 24 */
+{ q:"Le vote du budget primitif d'un SDIS doit avoir lieu avant le :", a:["1er janvier de l'année","30 avril en cas de renouvellement de l'assemblée délibérante","15 avril de l'année","1er juin de l'année"], c:[1,2], cat:"finances_publiques" },
+/* 25 */
+{ q:"Quel(s) pays ne fait/font pas partie des États Membres de l'Union Européenne ?", a:["L'ISLANDE","LA FINLANDE","LA SUISSE","LA REPUBLIQUE TCHEQUE"], c:[0,2], cat:"europe" },
+/* 26 */
+{ q:"Qui est le/la président(e) du Parlement Européen élu(e) en janvier 2022 ?", a:["Jean-Claude Juncker","Emmanuel Macron","Roberta Metsola","Ursula Von Der Leyen"], c:[2], cat:"europe" },
+/* 27 */
+{ q:"La déclaration du 9 Mai 1950 aussi appelée déclaration R.SCHUMAN est considérée comme le texte fondateur de :", a:["la construction Européenne","la constitution Européenne","la commission Européenne","la confédération Européenne"], c:[0], cat:"europe" },
+/* 28 */
+{ q:"La présidence de la commission européenne est actuellement tenue par :", a:["Mario Draghi","Jean-Claude Juncker","Ursula von der Leyen","Jacques Delors"], c:[2], cat:"europe" },
+/* 29 */
+{ q:"L'ERCC est :", a:["le centre de coordination nucléaire de France","le centre de coordination de la réaction d'urgence de l'Union Européenne","une institution non gouvernementale","une ONG"], c:[1], cat:"europe" },
+/* 30 */
+{ q:"Le parlement européen: Question neutralisée par le jury", a:["Neutralisée","Neutralisée","Neutralisée","Neutralisée"], c:[], cat:"europe" },
+/* 31 */
+{ q:"Le 1er janvier 2022, la France a pris la présidence tournante :", a:["du parlement européen","du conseil de l'Union Européenne","de la commission européenne","du conseil de l'Europe"], c:[1], cat:"europe" },
+/* 32 */
+{ q:"Combien y a-t-il de députés européens représentant la France ?", a:["43","79","105","177"], c:[1], cat:"europe" },
+/* 33 */
+{ q:"Je suis étranger résidant en France, citoyen d'un pays membre de l'Union Européenne, je peux voter pour :", a:["les élections municipales","les élections présidentielles","les élections législatives","les élections cantonales"], c:[0], cat:"europe" },
+/* 34 */
+{ q:"A quelle zone de défense appartient Saint-Pierre-et-Miquelon ?", a:["Sud de l'Océan Indien","Nouvelle-Calédonie","Antilles","Aucune réponse ne convient"], c:[3], cat:"securite_civile" },
+/* 35 */
+{ q:"Les ESOL (Etablissements de Soutien Opérationnel et Logistique) sont basés à :", a:["Méry-sur-Oise","Marseille-la-Valentine","Jarnac","Orange"], c:[0,1,2], cat:"securite_civile" },
+/* 36 */
+{ q:"En France, pour combattre un feu de forêt, le Canadair CL-415 est appelé :", a:["Milan","Lima","Tracker","Pélican"], c:[3], cat:"securite_civile" },
+/* 37 */
+{ q:"Le COGIC est basé :", a:["au ministère de l'Intérieur","à l'hôtel Matignon","à l'ENSOSP","au ministère des affaires étrangères"], c:[0], cat:"securite_civile" },
+/* 38 */
+{ q:"Le collaborateur occasionnel du service public :", a:["est une notion intégrée dans le code de la sécurité intérieure","est une notion issue de la jurisprudence","peut être une personne mineure","représente le statut de sapeur-pompier volontaire"], c:[0,1,2], cat:"droit_public" },
+/* 39 */
+{ q:"Le dispositif ORSEC :", a:["se compose de dispositions générales et spécifiques","se compose uniquement de dispositions générales","se décline uniquement au niveau départemental","se décline uniquement au niveau national"], c:[0], cat:"securite_civile" },
+/* 40 */
+{ q:"Quels sont les bons couples << plan de secours sites >> ?", a:["PPI Plan Particulier d'Intervention / Installation nucléaire de base","PSI Plan de Sécurité et d'Intervention / Réseau de transport par canalisation","PIS Plan d'Intervention et de Sécurité / Tunnel","PUI Plan d'Urgence Interne / Site industriel"], c:[1,2], cat:"securite_civile" },
+/* 41 */
+{ q:"Quels sont les différents niveaux du plan vigipirate ?", a:["Urgence attentat","Sécurité renforcée risque attentat","Ecarlate","Vigilance"], c:[0,1,3], cat:"securite_civile" },
+/* 42 */
+{ q:"L'inspection générale de la sécurité civile :", a:["participe au contrôle des associations agréées de sécurité civile","contribue à l'évaluation des sapeurs-pompiers relevant du cadre d'emplois de conception et de direction","agit sous l'autorité de l'Inspection Générale de l'Administration","diligente des enquêtes administratives"], c:[0,1,3], cat:"securite_civile" },
+/* 43 */
+{ q:"La conférence nationale des services d'incendie et de secours :", a:["est un organisme paritaire","donne un avis sur l'avancement au grade de commandant, lieutenant-colonel et colonel des sapeurs-pompiers volontaires","est consultée sur les demandes de sanction du 4e groupe concernant les officiers de sapeurs-pompiers professionnels","comprend parmi ses membres des représentants des sapeurs-pompiers volontaires"], c:[3], cat:"securite_civile" },
+/* 44 */
+{ q:"Le commandant des opérations de secours :", a:["est systématiquement un sapeur-pompier","peut être un chef d'agrès une équipe","est placé sous l'autorité du directeur des opérations de secours","dans le cadre d'un plan ORSEC-NOVI, a autorité sur le directeur des secours médicaux"], c:[1,2,3], cat:"securite_civile" },
+/* 45 */
+{ q:"Le plan communal de sauvegarde :", a:["s'articule avec le plan ORSEC","est obligatoire pour toutes les communes","est arrêté par le maire, et à Paris, par le préfet de police","impose la mise en œuvre d'un exercice tous les cinq ans au moins"], c:[0,2,3], cat:"securite_civile" },
+/* 46 */
+{ q:"Le contrat territorial de réponses aux risques et aux effets des menaces :", a:["remplace le schéma départemental d'analyse et de couverture des risques","recense l'ensemble des capacités des acteurs publics et privés pour répondre aux objectifs définis","prépare les différents services à la gestion des crises","exclut le risque radiologique"], c:[1,2], cat:"securite_civile" },
+/* 47 */
+{ q:"Le COD (Centre Opérationnel Départemental) est :", a:["la cellule de crise de la préfecture","la cellule de crise d'une commune","une cellule du poste de commandement opérationnel","piloté par le Préfet ou un cadre de la préfecture"], c:[0,3], cat:"securite_civile" },
+/* 48 */
+{ q:"Le Plan Particulier d’Intervention : question neutralisée par le jury", a:["peut concerner une centrale nucléaire","peut être déclenché sur tout le territoire national","confère au directeur de l’établissement la qualité de DOI","est une composante du plan ORSEC"], c:[], cat:"securite_civile" },
+/* 49 */
+{ q:"En RCH (risque chimique), quel/quels type(s) de pollutions aquatiques peut-on rencontrer ?", a:["Electriques","Organiques","Pénétrantes","Bactériologiques"], c:[1,3], cat:"technique" },
+/* 50 */
+{ q:"En RAD (Risque radiologique) la CMIR utilise différents types de matériels qui peuvent être :", a:["détecteurs","débitmètres","ictomètres","spectromètres"], c:[0,1,2,3], cat:"technique" },
+/* 51 */
+{ q:"De quelle(s) échelle(s) peut-on se servir pour mesurer l'intensité des cyclones tropicaux ?", a:["BEAUFORT","FUJITA","RICHTER","SAFFIR-SIMPSON"], c:[3], cat:"technique" },
+/* 52 */
+{ q:"En risque chimique, un ou plusieurs « seuil(s) » existe(nt). Il(s) peut/peuvent être :", a:["SEI (seuil des effets irréversibles)","SOL (seuil olfactif limité)","SEL (seuil des effets létaux)","SLI (seuil létal immédiat)"], c:[0,2], cat:"technique" },
+/* 53 */
+{ q:"Le caractère inflammable d'un liquide peut se définir par :", a:["le point éclair","le point d'inflammation","le point d'auto-inflammation","la pression partielle"], c:[0,1,2], cat:"technique" },
+/* 54 */
+{ q:"En prévention, concernant les établissements spéciaux, lequel/lesquels n'existe(nt) pas ?", a:["PA","CTS","GOA","EF"], c:[2], cat:"technique" },
+/* 55 */
+{ q:"Les fumées d'incendie sont toxiques. Parmi les gaz les plus dangereux, nous retrouvons :", a:["NO","H2S","H2O","CO"], c:[0,1,3], cat:"technique" },
+/* 56 */
+{ q:"La vitesse de propagation d'un feu de forêt est influencée par :", a:["l'hygrométrie","la pression atmosphérique","le relief","la DECI"], c:[0,2], cat:"technique" },
+/* 57 */
+{ q:"La combustion est une réaction :", a:["acido-basique","d'oxydoréduction","de polymérisation","de décomposition"], c:[1], cat:"technique" },
+/* 58 */
+{ q:"Quels sont les gaz appartenant à la famille des gaz rares ?", a:["le radon","le chlore","le néon","l'hydrogène"], c:[0,2], cat:"technique" },
+/* 59 */
+{ q:"Parmi les propositions, quels sont les niveaux de classement possibles pour une ICPE ?", a:["NC = Non Classé","E = Enregistrement","R = Restriction","A = Autorisation"], c:[1,3], cat:"technique" },
+/* 60 */
+{ q:"IGH habitation plancher bas premier niveau : question neutralisée par le jury", a:["28 m","40 m","100 m","50 m"], c:[], cat:"technique" }
 ];
